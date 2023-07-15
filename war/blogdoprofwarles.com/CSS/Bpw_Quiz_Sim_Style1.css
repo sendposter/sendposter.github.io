@@ -1,0 +1,108 @@
+
+/**===================== Geral ======================== */
+html,div,span,h3,h4,h5, p,pre,a,em,font,q,s,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0; font:inherit; font-size:100%; font-style:inherit;  font-weight:inherit; margin:0;  outline:0; padding:0;  vertical-align: baseline; }
+h4{padding-bottom:10px; color:#333333; font-weight:normal; font-family:'Open Sans',sans-serif; font-size:30px; line-height:1.2; }
+
+h5{padding-bottom:10px; color:#333333; font-weight:normal; font-family:'Open Sans',sans-serif;    font-size:19px; line-height:1.2;  text-align: justify; font-weight:bold; padding-left: 33px; }
+
+
+.clearfix:after{visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+.clearfix{display:block; }
+.bpw_quizCtr{width:auto;  margin-bottom: 20px;}
+.bpw_questionsCtr{margin-bottom: 20px;}
+.bpw_questionAnswersCtr{width:93%; margin: 0 20px 20px 12px; border-radius: 14px; }
+.bpw_singleQuestionWrapper {display:block; border: 5px solid #088A08; }
+
+/**===================== título ======================== */
+.titulo{font-size:25px;  font-weight:normal;  font-family:'Open Sans', sans-serif; text-align:center; color: #FF0000; font-weight:bold;  }
+
+
+/**=================== Enunciado ======================= */
+.bpw_singleQuestionCtr{margin-bottom:0; }
+.bpw_questionTextCtr{float:left; padding:12px 20px 2px; background-color:#eaeaea;  color:#0a0a0a; width: auto;    }
+.bpw_questionTextCtr h4{margin:0; font-size:17px; line-height:1.2; color:inherit; text-align: justify; font-weight:bold; }
+.bpw_questionMediaCtr{width:100%; margin-bottom:10px; }
+.quiz-clearfix{clear:both; zoom:1;}
+.quiz-clearfix:before,.quiz-clearfix:after{content:" "; display:table;}
+.quiz-clearfix:after{clear:both}
+div.circulo{display: flex;   align-items: center;   justify-content: center;   width: 33px;   height: 33px;   border-radius: 50%;   float: left;  margin-left: -10px;
+   font-size: 19px;   font-weight: bold;   color: #ffffff;      background: #000000;     border: 2px solid #848484;   margin-top: -5px;
+   }
+
+/**============== QUESTÕES ===================== */
+.bpw_quizCtr .bpw_singleAnswerCtr{border:2px solid rgba(0,0,0,0.1); background:#f2f2f2; padding:5px 5px 1px ; margin:0 0 5px 0; border-radius: 14px; }
+.bpw_quizCtr .bpw_singleAnswerCtr:last-of-type{margin-bottom:0}
+.bpw_singleAnswerCtr:hover{background:#fff195!important; transition:background 550ms ease-out; cursor:pointer; color:#000!important;}
+.bpw_quizCtr .bpw_singleAnswerCtr.bpw_answerSelected{background:#4CAF50!important; color:#fff!important;}
+.bpw_quizCtr .bpw_singleAnswerCtr.bpw_correctAnswer{background:#4CAF50!important; border-color:#409444!important;color:#FFF!important;opacity:0.8;}
+.bpw_quizCtr .bpw_singleAnswerCtr.bpw_incorrectAnswer{background:#F44336!important; border-color:#CE392E!important; color:#fff!important;opacity:0.8;}
+.bpw_questionAnswered .bpw_singleAnswerCtr{opacity:0.5; background:#f2f2f2!important; color:inherit!important;}
+.bpw_questionAnswered .bpw_singleAnswerCtr.chosen{opacity:1}
+.bpw_singleAnswerCtr .bpw_answerTxtCtr{background-repeat:no-repeat; vertical-align:middle; display:block; line-height:20px; font-weight:bold; font-size:17px;  height:auto; padding-left:11px; cursor:pointer;  font-family:'Open Sans',sans-serif;  }
+.bpw_singleAnswerCtr .bpw_IsTrivia {background-color:#eaeaea; color:#0a0a0a; }
+
+#circuloRESP{ background: #424242;    border-radius:100%;     width:22px;     height:22px;     font-size: 16px;      padding: 1.5px;      margin-bottom: -24px; }
+.marcadorALTERN {margin: 5px;      font-family: Comic Sans MS, Century Gothic, arial, helvica, sans-serif;       color: #ffffff;       text-align: center;   }
+
+/** =============== Resposta da Questão =====================**/
+.bpw_correctExplanationHead{color:#4CAF50; font-weight:bold; font-size:35px; }   
+.bpw_wrongExplanationHead{color:#F44336; font-weight:bold; font-size:35px;}
+p.bpw_QuestionExplanationText{margin-bottom:10px;  font-size: 15px;  font-weight: bold;  font-family:'Open Sans',sans-serif;   text-align: justify;}
+.bpw_triviaQuestionExplanation{padding:10px 10px 0 10px; border:1px solid #dddddd; display:none;  margin:20px 0 0 0; border-radius:2px; clear:both; width:100%; box-sizing:border-box;  background-color: #ECF6CE;  }
+
+/** =============== Resultado Final ======================**/
+.bpw_resultsCtr{width:100%;  margin:0 auto; }
+.bpw_singleResultWrapper{padding:10px 20px 20px 20px; margin-top:20px; border-radius:3px; font-size:18px; float:left; width:100%; box-sizing:border-box; border: 5px solid #8A0829; background-color: #FDDEDE;  }
+.bpw_singleResultWrapper .bpw_resultScoreCtr{font-weight: bold; font-size: 20px; color: #FC0101;  text-decoration: blink;  font-family:'Open Sans',sans-serif;}
+.bpw_singleResultWrapper .bpw_quizTitle{display:block; font-weight:bold; font-size: 27px;    font-family:'Open Sans',sans-serif; }
+.bpw_resultTitle {font-weight:bold; font-size: 18px;  font-family: 'Open Sans',sans-serif;}
+.bpw_resultDesc {font-weight:bold; font-size: 50px; font-family: 'Courier New','Open Sans',sans-serif;  margin-left: 70px; color: #0000FF; }
+
+
+/** ============ button (responder novamente) ====================**/
+.bpw_retakeQuizCtr{text-align:center}
+.bpw_retakeQuizCtr>button{margin:20px 0}
+.bpw_retakeQuizBtn{background-color:#222; border:0; color:#fff; cursor:pointer; font-size:20px; font-weight:700; padding:10px; border-radius: 7px;}
+.bpw_retakeQuizBtn:hover {background-color:#656464; border:0; color:#fff; cursor:pointer; font-size:20px; font-weight:700; padding:10px; border-radius: 7px;} 
+
+ /**=====================  formatação dos RESULTADOS  ======================**/
+@keyframes dropOut{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}100%{opacity:0; -webkit-transform:scale(0); transform:scale(0)}}
+.transition.fade.in{-webkit-animation-name:fadeIn; animation-name:fadeIn}
+.transition[class*="fade up"]
+.in{-webkit-animation-name:fadeInUp; animation-name:fadeInUp}
+.transition[class*="fade down"]
+.in{-webkit-animation-name:fadeInDown; animation-name:fadeInDown}
+.transition[class*="fade left"]
+.in{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft}
+.transition[class*="fade right"]
+.in{-webkit-animation-name:fadeInRight; animation-name:fadeInRight}
+.transition.fade.out{-webkit-animation-name:fadeOut; animation-name:fadeOut}
+.transition[class*="fade up"]
+.out{-webkit-animation-name:fadeOutUp; animation-name:fadeOutUp}
+.transition[class*="fade down"]
+.out{-webkit-animation-name:fadeOutDown; animation-name:fadeOutDown}
+.transition[class*="fade left"]
+.out{-webkit-animation-name:fadeOutLeft; animation-name:fadeOutLeft}
+.transition[class*="fade right"]
+.out{-webkit-animation-name:fadeOutRight; animation-name:fadeOutRight}
+
+
+/** ============ button (página anterior) ====================**/
+.bpw_button4{display:block; line-height:40px;  height:40px;  text-align:center;  border-radius:6px;  background:#44C3AA;   color:#000000;   cursor:pointer; 
+ font-size:18px;   text-decoration: none;   font-family: "Cooper Black", Arial, "Times New Roman", Georgia, Serif; width: 200px;  margin: 0 auto;  }
+.bpw_button4:HOVER{background:#3BA993;  text-decoration: none;  font-family: "Cooper Black",  Arial, "Times New Roman", Georgia, Serif;   color:#000000;}
+
+/** ============ GRÁFICOS ====================**/
+ @keyframes dhx_loader_rotate{100%{transform:rotate(360deg);}} 
+ @keyframes dhx_loader_dash{0%{stroke-dasharray:1,200; stroke-dashoffset:0;} 50%{stroke-dasharray:89,200; stroke-dashoffset:-35px;} 100%{stroke-dasharray:89,200; stroke-dashoffset:-124px;}}  .dhx_tooltip{display:none; position:absolute; color:#626262; z-index:10000; padding:4px 10px 4px 10px; border:1px solid #000; border-radius:2px;text-shadow:0 1px 1px #fff;box-shadow:0 0 5px #d9d9d9;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#efefef),color-stop(0.5,#f6f6f6),color-stop(1,#efefef));background:-o-linear-gradient(#efefef 0,#f6f6f6 50%,#efefef 100%);background:-ms-linear-gradient(#efefef 0,#f6f6f6 50%,#efefef 100%);background:-moz-linear-gradient(#efefef 0,#f6f6f6 50%,#efefef 100%); background:#F4FA58;font-size:14px;font-family:Roboto,Arial,Helvetica; color:#000000; margin: -35px 0 0 -30px; } .dhx_chart{position:relative;font-family:Roboto,Arial,Helvetica;font-size:13px;color:#404040;overflow:hidden;z-index:0; }  .dhx_chart canvas{position:absolute;left:0;top:0;}  .dhx_canvas_text{position:absolute;text-align:center;overflow:hidden;white-space:nowrap;z-index:1000;}  .dhx_map_img{width:100%;height:100%;position:absolute;top:0;left:0;border:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}   .dhx_axis_item_y{position:absolute; height:18px; line-height:18px; margin-top:-4px; text-align:right;} 
+ .dhx_axis_title_x{text-align:center; font-weight: bold; margin-top: -1px; font-size: 13px;}  .dhx_axis_title_y{text-align:center; height:18px; font-weight: bold; line-height:18px;  font-size:11px; font-family:Roboto,Arial,Helvetica;color:#404040; -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);}  .dhx_ie_filter{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);zoom:1;font-family:serif;} .dhx_chart_legend{position:absolute;z-index:1000;} .dhx_chart_legend_item{height:18px;line-height:18px;padding:2px;cursor:pointer;}  .dhx_chart_legend_item.hidden{color:#aaa;}  .dhx_axis_item_y.dhx_radar{color:#404040;font-size:12px;padding-right:3px;height:13px;line-height:13px;margin-top:0;}  .dhx_canvas_text.dhx_axis_radar_title{margin-top:0;padding-top:0;} .dhx_axis_item_y,.dhx_axis_item_x{color:#404040;}  .dhx_axis_item_x{padding-top:2px;  }
+
+
+/** ============ LINK YOUTUBE====================**/
+#linkYotube .caix {background: 100%;background-color: #80F57F;padding: 18px;text-align: center; }
+
+#linkYotube .redbutton { background: #F63D3D;   background-image: -webkit-linear-gradient(top, #F63D3D, #811616);  background-image: -moz-linear-gradient(top, #F63D3D, #811616);  background-image: -ms-linear-gradient(top, #F63D3D, #811616);  background-image: -o-linear-gradient(top, #F63D3D, #811616);  background-image: -webkit-gradient(to bottom, #F63D3D, #811616);  -webkit-border-radius: 20px; -moz-border-radius: 20px;   border-radius: 20px; height: 14px; line-height: 14px; color: #FFFFFF; font-family: Verdana;  width: 90%; font-size: 20px; font-weight: 900;  padding: 12px;  -webkit-box-shadow: 1px 1px 6px 0 #000000; -moz-box-shadow: 1px 1px 6px 0 #000000;  box-shadow: 1px 1px 6px 0 #000000; text-shadow: 1px 1px 6px #000000;  border: solid #762C2C 1px;  text-decoration: none;  display: inline-block; cursor: pointer;  text-align: center; background-position: center;}
+
+#linkYotube .redbutton:hover { border: solid #ED3333 1px;  background: #811616;   background-image: -webkit-linear-gradient(top, #811616, #F63D3D);  background-image: -moz-linear-gradient(top, #811616, #F63D3D);  background-image: -ms-linear-gradient(top, #811616, #F63D3D);  background-image: -o-linear-gradient(top, #811616, #F63D3D);  background-image: -webkit-gradient(to bottom, #811616, #F63D3D);  -webkit-border-radius: 20px;  -moz-border-radius: 20px;   border-radius: 20px;   text-decoration: none;}
+
+#linkYotube .icone {position: absolute; margin-top: -9px; margin-left: 4px;}

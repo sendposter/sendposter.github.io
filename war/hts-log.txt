@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2023 09:33:06 at https://profwarles.blogspot.com/2017/04/quiz-1-portugues-3-ano.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pt_BR, en, *" https://profwarles.blogspot.com/2017/04/quiz-1-portugues-3-ano.html -O1 "C:\Users\Marciano\Desktop\war" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:34:38	Error: 	"Error when decompressing" (-1) at link https://profwarles.blogspot.com/2017/04/ https://blogdoprofwarles.com/Port/3°AnoPort(EF)/img1_quiz1_Port_3(E.F).png  (from https://profwarles.blogspot.com/2017/04/quiz-1-portugues-3-ano.html)
+09:35:47	Error: 	Exit requested by shell or user
+09:35:47	Warning: 	File not added due to mirror cancel: https://profwarles.blogspot.com/2017/04/ https://blogdoprofwarles.com/Port/3°AnoPort(EF)/img1_quiz6_Port_3(E.F).png 
+09:35:53	Error: 	"Not Found" (404) at link https://profwarles.blogspot.com/2017/04/e (from https://blogdoprofwarles.com/JS/Bpw_Quiz_SimJavaScript3.js)
+09:35:53	Error: 	"Not Found" (404) at link https://profwarles.blogspot.com/2017/04/ https://blogdoprofwarles.com/Port/3°AnoPort(EF)/img1_quiz2_Port_3(E.F).png  (from https://profwarles.blogspot.com/2017/04/quiz-2-portugues-3-ano.html)
+09:35:56	Error: 	Exit requested by shell or user
+09:35:56	Error: 	"" (-1) at link https://profwarles.blogspot.com/2017/04/quiz-2-portugues-3-ano.html?showComment=1632176422121 (from https://profwarles.blogspot.com/2017/04/quiz-2-portugues-3-ano.html)
+09:35:56	Error: 	Exit requested by shell or user
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 50 seconds : 96 links scanned, 88 files written (9838593 bytes overall) [5931339 bytes received at 34890 bytes/sec], 5939806 bytes transferred using HTTP compression in 37 files, ratio 16%, 1.3 requests per connection
+(7 errors, 1 warnings, 0 messages)
+* * MIRROR ABORTED! * *
+The current temporary cache is required for any update operation and only contains data downloaded during the present aborted session.
+The former cache might contain more complete information; if you do not want to lose that information, you have to restore it and delete the current cache.
+This can easily be done here by erasing the hts-cache/new.* files]
