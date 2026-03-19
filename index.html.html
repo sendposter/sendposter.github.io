@@ -1,0 +1,128 @@
+<?php
+include 'db.php';
+
+
+$search = $_GET['search'] ?? '';
+$sql = "SELECT * FROM users WHERE nome LIKE '%$search%' OR email LIKE '%$search%' ORDER BY id DESC";
+$result = $conn->query($sql);
+?>
+
+<link rel="stylesheet" href="style.css">
+<h2>Listar Usuários</h2>
+<a href="create.php" class="button">Cadastrar</a>
+<a href="files.php" class="button">Listar Arquivos</a>
+<a href="export_pdf.php" class="button">Exportar PDF</a>
+<a href="export_excel.php" class="button">Exportar Excel</a></br></br>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Data Table </title>
+    <meta content="" name="description">
+    <meta content="Author" name="MJ Maraz">
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/favicon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- ========================================================= -->
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+
+
+
+</head>
+<!-- =============== Design & Develop By = MJ MARAZ   ====================== -->
+
+<body>
+    <header class="header_part">
+        <img src="assets/images/logo.png" alt="" class="img-fluid">
+        <h4>How to Make - Data Table - Bootstrap 5</h4>
+    </header>
+    <!-- =======  Data-Table  = Start  ========================== -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="data_table">
+                    <table id="example" class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                              <th>ID</th>
+                              <th>Nome</th>
+                              <th>E-mail</th>
+                              <th>Arquivo</th>
+                              <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>editar</td>
+                               
+                            </tr>
+
+
+
+  <?php while($row = $result->fetch_assoc()): ?>
+    <tr>
+        <td><?= $row['id'] ?></td>
+        <td><?= htmlspecialchars($row['nome']) ?></td>
+        <td><?= htmlspecialchars($row['email']) ?></td>
+        <td>
+            <?php if($row['arquivo']): ?>
+                <a href="uploads/<?= $row['arquivo'] ?>" target="_blank">Ver Arquivo</a>
+            <?php endif; ?>
+        </td>
+        <td>
+            <a href="edit.php?id=<?= $row['id'] ?>" class="edit button">Editar</a>
+            <a href="delete.php?id=<?= $row['id'] ?>" class="delete button" onclick="return confirm('Excluir?')">Excluir</a>
+        </td>
+    </tr>
+    <?php endwhile; ?>
+</table>
+
+</div>
+</div>
+</div>
+
+
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =======  Data-Table  = End  ===================== -->
+    <!-- ============ Java Script Files  ================== -->
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/vfs_fonts.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</html>
